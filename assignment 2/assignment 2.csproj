@@ -89,5 +89,11 @@
   <ItemGroup>
     <None Include="Resources\series circuit.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3 resist parallel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3 resist series.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
