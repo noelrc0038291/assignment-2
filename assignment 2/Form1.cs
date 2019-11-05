@@ -49,7 +49,7 @@ namespace assignment_2
             try
             {
                 r1 = double.Parse(textBox1.Text);
-            }
+            }//This converts the text box into a value
             catch
             {
                 MessageBox.Show("Incorrect value for angle.");
@@ -68,7 +68,7 @@ namespace assignment_2
             try
             {
                 r2 = double.Parse(textBox2.Text);
-            }
+            }//This converts the text box into a value
             catch
             {
                 MessageBox.Show("Incorrect value for angle.");
@@ -77,7 +77,7 @@ namespace assignment_2
 
             double ra = 1.0 / (1.0 / r1 + 1.0 / r2);
             label1.Text = "rt = " + ra + " N";
-
+            //This calculates the total resistance of a parelell circuit with 2 resistors
 
         }
 
@@ -96,7 +96,7 @@ namespace assignment_2
             try
             {
                 r3 = double.Parse(textBox3.Text);
-            }
+            }//This converts the text box into a value
             catch
             {
                 MessageBox.Show("Incorrect value for angle.");
@@ -115,7 +115,7 @@ namespace assignment_2
             try
             {
                 r4 = double.Parse(textBox4.Text);
-            }
+            }//This converts the text box into a value
             catch
             {
                 MessageBox.Show("Incorrect value for angle.");
@@ -124,6 +124,7 @@ namespace assignment_2
 
             double rb = r3 + r4;
             label2.Text = "rt = " + rb + " N";
+            //This calculates the total resistance of a series circuit with 2 resistors
         }
 
         private void Label2_Click(object sender, EventArgs e)
@@ -143,7 +144,7 @@ namespace assignment_2
 
         private void Button3_Click(object sender, EventArgs e)
         {
-            double r5, r6, r7;
+            double r5, r6, r7; 
             try
             {
                 r5 = double.Parse(textBox5.Text);
@@ -156,7 +157,7 @@ namespace assignment_2
             try
             {
                 r5 = double.Parse(textBox5.Text);
-            }
+            }//This converts the text box into a value
             catch
             {
                 MessageBox.Show("Incorrect value for angle.");
@@ -175,7 +176,7 @@ namespace assignment_2
             try
             {
                 r6 = double.Parse(textBox6.Text);
-            }
+            }//This converts the text box into a value
             catch
             {
                 MessageBox.Show("Incorrect value for angle.");
@@ -194,7 +195,7 @@ namespace assignment_2
             try
             {
                 r7 = double.Parse(textBox7.Text);
-            }
+            }//This converts the text box into a value
             catch
             {
                 MessageBox.Show("Incorrect value for angle.");
@@ -203,6 +204,7 @@ namespace assignment_2
 
                 double rc = 1.0 / (1.0 / r5 + 1.0 / r6 + 1.0 / r7);
                 label3.Text = "rt = " + rc + " N";
+            //This calculates the total resistance of a paralell circuit with 3 resistors
         }
 
         private void TextBox7_TextChanged(object sender, EventArgs e)
@@ -225,7 +227,7 @@ namespace assignment_2
             try
             {
                 r8 = double.Parse(textBox8.Text);
-            }
+            }//This converts the text box into a value
             catch
             {
                 MessageBox.Show("Incorrect value for angle.");
@@ -244,7 +246,7 @@ namespace assignment_2
             try
             {
                 r9 = double.Parse(textBox9.Text);
-            }
+            }//This converts the text box into a value
             catch
             {
                 MessageBox.Show("Incorrect value for angle.");
@@ -262,7 +264,7 @@ namespace assignment_2
             try
             {
                 r10 = double.Parse(textBox10.Text);
-            }
+            }//This converts the textbox into a value
             catch
             {
                 MessageBox.Show("Incorrect value for angle.");
@@ -271,6 +273,6 @@ namespace assignment_2
 
             double rd = r8 + r9 + r10;
             label4.Text = "rt = " + rd + " N";
-        }
+        }//This calculates the total resistance for series circut with 3 resistors
     }
 }
